@@ -220,7 +220,7 @@ p{
 }
 
 .course-col{
-    flex-basis: 31%;
+    flex-basis: 45%;
     background: #5296A5;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -410,4 +410,53 @@ h3{
     .welcome{
         height: 40vh;
     }
+}
+
+.organisasi{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.organisasi-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.organisasi-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.organisasi-col p{
+    padding: 0;
+    color: black;
+}
+
+.organisasi-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.vs{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.vs:hover{
+    border: 1px solid black;
+    background: #4F359B;
+    transition: 1s;
+    color: white;
 }
