@@ -412,34 +412,66 @@ h3{
     }
 }
 
-.organisasi{
-    width: 80%;
-    margin: auto;
+.side-organisasi {
+    background-color: rgb(44 13 89/45% );
+    height: 75vh;
+    padding: 20px;
     text-align: center;
-    padding-top: 100px;
+    color: white;
 }
 
-.organisasi-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: center;
+.organisasi-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.organisasi-col img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.organisasi-col p{
-    padding: 0;
+.organisasi-list {
+    background-color: white;
     color: black;
+    border: 2px solid white;
+    padding: 50px;
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
-.organisasi-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: center;
+.organisasi-list:hover{
+    border: 2px solid black;
+}
+
+.org-img {
+    height: 150px;
+    width: auto;
+}
+
+.org-link {
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(
+        transparent 0%,
+        transparent 90%,
+        #36558F 90%,
+        #36558F 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 400ms;
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 /15%);
+}
+
+.org-link:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+    background-color: lightblue;
+    color: black;
 }
 
 .vs{
@@ -459,4 +491,126 @@ h3{
     background: #4F359B;
     transition: 1s;
     color: white;
+}
+
+#organisasi {
+    background-image: url('https://samuelmiskan9.github.io/PictureUts/gg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 700px){
+    .org-link {
+        width: 100px;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        background-image: linear-gradient(
+            transparent 0%,
+            transparent 90%,
+            #36558F 90%,
+            #36558F 100%
+        );
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+        transition: background-size 400ms;
+        box-shadow: 0px 10px 15px 10px rgb(0 0 0 /15%);
+    }
+    .side-organisasi {
+        background-color: rgb(44 13 89/45% );
+        height: 50vh;
+        padding: 20px;
+        text-align: center;
+    }
+    .organisasi-list {
+        background-color: white;
+        color: black;
+        border: 2px solid white;
+        padding: 50px;
+        text-align: center;
+        width: 400px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+}
+
+#dosen {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.row {
+    background-color: white;
+    padding: 20px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tabel-dosen {
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    width: 500px;
+    border: 2px solid black;
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 /15%);
+    transition: 0.5s;
+}
+
+.tabel-dosen:hover{
+    color: rgb(121, 27, 156);
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th {
+    background-color: rgb(192, 189, 189);
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+
+tr, td {
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(192, 189, 189);
+}
+
+.nama-dosen {
+    text-decoration: none;
+    color: red;
+    padding: 2px;
+}
+
+.nama-dosen:hover {
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+}
+
+.dosen{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
 }
